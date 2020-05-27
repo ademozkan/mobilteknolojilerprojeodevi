@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlarmEklemeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/adadadada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:text="Not" />
+
+        <EditText
+            android:id="@+id/txt_Not"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/colorPrimaryDark"
+
+        tools:context=".AlarmEklemeActivity">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="2dp"
+            android:text="Baslık"
+            android:textColor="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/txt_Baslık"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textColor="#F8F7F4F4"
+            android:textColorHighlight="#F8E40505"
+            android:textColorHint="#FCDA0A0A"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_Sirala"
+            android:layout_width="288dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="95px"
+
+            android:layout_marginTop="305px"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="80dp"
+            android:text="Kategori seç"
+            android:textColor="#F2FAF7F7"
+            android:textStyle="normal|bold" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lnr_Tarih"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <EditText
+            android:id="@+id/txt_Tarih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:focusable="false"
+            android:foregroundGravity="center"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/textView3"
+
+            android:layout_width="112dp"
+            android:layout_height="19dp"
+            android:layout_weight="1"
+            android:text='"@"'
+            android:textColor="#F8F30808"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/txt_Saat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:focusable="false"
+            android:foregroundGravity="center"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:scrollbarSize="6dp"
+            android:src="@drawable/ic_alarm_add_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_weight="1"
+            android:paddingTop="1dp"
+            android:text="Alarm Ekle"
+            android:textColor="#EE070707"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic" />
+
+        <CheckBox
+            android:id="@+id/cbox_AlarmEkle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_weight="1"
+            android:paddingTop="1dp"
+            android:scrollbarSize="4dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_Ekle"
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="right"
+            android:layout_marginTop="153dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_send_white_24dp"
+            app:maxImageSize="30dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_Paylas"
+
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+
+            android:layout_marginTop="450dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_share_black_24dp"
+            app:maxImageSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_AyarlananTarih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="220dp"
+            android:foregroundGravity="center"
+            android:gravity="center_horizontal"
+            android:textColor="#F5F70909"
+            android:textStyle="bold|italic" />
+    </FrameLayout>
+
+
+</FrameLayout>

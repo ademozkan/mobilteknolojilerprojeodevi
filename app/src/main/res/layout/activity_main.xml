@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txt_hatırlatmaEklemedin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hiç Hatırlatma Eklemedin..."
+        android:textSize="18sp"
+        android:textStyle="normal|bold|italic" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_ayarlar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="160dp"
+        android:src="@drawable/ic_settings_applications_black_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_GecisIstatistik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="90dp"
+        android:src="@drawable/ic_trending_up_black_24dp" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_Gecis"
+        android:layout_width="71dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="23dp"
+        android:src="@drawable/ic_add_white_24dp" />
+
+    <LinearLayout
+        android:id="@+id/lnr_Kaybol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_Sırala"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="Sırala" />
+
+        <Spinner
+            android:id="@+id/spinner_Haftalk"
+            android:layout_width="218dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="95px"
+
+
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+
+        <CheckBox
+            android:id="@+id/cbox_Renklendir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Categoriye Göre Renklendir" />
+
+        <TextView
+            android:id="@+id/tv_Düzenleme"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="Düzenlemek  veya Silmek için Üzerlerine Tıklayınız..."
+            android:textStyle="normal|bold" />
+
+        <ListView
+            android:id="@+id/lwListele"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
